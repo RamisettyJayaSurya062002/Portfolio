@@ -1,0 +1,391 @@
+:root
+{
+    --primary-color: #adf0d4;
+    /* --secondary-color: #1fd8a4; */
+    --secondary-color: #f0f0f0;
+    
+    --bg-color:#0d1512;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition-duration: 200ms;
+}
+
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 14px;
+}
+
+
+.darkerText
+{
+    color: var(--secondary-color);
+}
+
+
+header, main, footer
+{
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+
+}
+
+
+nav{
+    color: var(--secondary-color);
+    display: flex;
+    align-content: center;
+    gap: 32px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+
+}
+
+
+main, section, .namecontainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main{
+    gap: 32px;
+}
+
+
+section{
+    display: flex;
+    margin-bottom: 8px;
+    gap: 0px;
+}
+
+
+section + section{
+    margin-top: 0px;
+}
+
+h1 {
+    margin-bottom: 4px; 
+}
+
+section p, section div {
+    margin-top: 0;
+    margin-bottom: 0px; 
+}
+
+section .educationcontainer{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.namecontainer
+{
+    gap: 8px;
+}
+
+p{
+    text-align: justify;
+    color: var(--secondary-color);
+}
+
+.statscontainer{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.experiencecontainer{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.educationcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+section,
+.experiencecontainer,
+.educationcontainer,
+.project {
+    margin: 0;
+    padding: 0;
+}
+body {
+    gap: 20px; 
+}
+
+main {
+    gap: 20px; 
+}
+
+
+section {
+    gap: 8px; 
+    margin-bottom: 8px; 
+}
+
+.experiencecontainer {
+    gap: x; 
+    margin-bottom: 8px; 
+}
+
+.educationcontainer {
+    gap: 8px; 
+    margin-bottom: 8px; 
+}
+
+.experience p,
+.education p,
+.skills p,
+.project p {
+    margin: 0; 
+    padding: 0; 
+}
+
+
+
+.experience{
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+h1{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+nav:hover{
+    opacity: 0.8;
+    color: var(--primary-color);
+}
+
+.imgcontainer{
+    border-radius: 100%;
+    max-width: 110px;
+    overflow: hidden;
+    
+}
+
+.outreach{
+    text-decoration: none;
+}
+
+.outreach:hover{
+    opacity: 0.7;
+}
+
+
+.imgcontainer img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+}
+
+.stats p{
+    margin: 0;
+}
+
+.stats div{
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.aboutme{
+    line-height: 1.5em;
+}
+
+
+
+.skills{
+    
+    font-size: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: grid;
+}
+
+.skillscontainer{
+    margin-top: 0px;
+    display: grid;
+    margin-bottom: 0px;
+}
+
+.education{
+
+    display: grid;
+    
+    font-size: 1rem;
+
+}
+
+
+
+/* .experiencecontainer{
+    gap: 10px;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-top: 0px;
+} */
+
+
+section {
+    margin: 0 0 8px 0; /* Minimal bottom margin */
+    padding: 0;
+}
+
+
+.experience p, .education p, .skills p, .project p
+{
+    margin: 0;
+    padding: 0;
+}
+.project{
+    gap: 10px;
+    text-align: justify;
+    margin-bottom:10;
+    margin-top: 0px;
+}
+
+.experience {
+   
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.experience h4{
+    margin-bottom: 4px;
+}
+
+
+.gpa{
+    display: flex;
+    margin-left: auto;
+
+
+}
+
+.project{
+    gap: 10px;
+    text-align: justify;
+    margin-bottom:10;
+    margin-top: 0px;
+}
+
+.project h4
+{
+    margin-bottom: 10px;
+}
+
+.project p
+{
+    margin-bottom: 10px;
+}
+.project-image
+{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+   
+    border-radius: 8px;
+}
+
+
+/* footer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 20px;
+} */
+
+@media (min-width: 768px){
+    body{
+        gap: 48px;
+    }
+    header{
+        gap: 48px;
+    }
+    nav{
+        gap: 48px;
+    }
+    main{
+        gap: 96px;
+    }
+    section{
+        gap: 64px;
+    }
+    .namecontainer{
+        gap: 16px;
+    }
+    .statscontainer{
+        gap: 48px;
+    }
+    .experiencecontainer{
+        gap: 10px;
+    }
+    .stats div{
+        gap: 10px;
+    }
+    .imgcontainer{
+        max-width: 150px;
+    }
+    .stats p{
+        font-size: 1.2em;
+    }
+    .aboutme{
+        width: 80%;
+        margin-right: auto;
+        font-size: 1.2em;
+    }
+    
+}
